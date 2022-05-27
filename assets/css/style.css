@@ -6,11 +6,10 @@
     }
 
     .titulo-header{
-        display: grid;
-        justify-items: center;
-        align-items: center;
-        color: white;
-     
+    display: grid;
+    text-align: center;
+    color: white;
+    
     }
 
     .aside-bar{
@@ -21,70 +20,110 @@
     .container-main{
     grid-area: main;
     background-color: lightsteelblue;
-    grid-template-columns: 1fr 1fr 1fr;
+    
         }
+
+    .cards{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    }
+
 
     .footer{
     grid-area: footer;
-    background-color: #66f;
+    background-color:white;
+    text-align: center;
+    padding: 10px 0;
     }
 
     .grid-container{
-        display: grid;
-        grid-template-areas:
-        "header header"
-        "menu main"
-        "footer footer"; 
-        grid-template-columns: 15% auto;
-         }
-
-        .aside-bar
-            {
-            display: flex;
-            background-color: lightsteelblue;
-            
-            }
-            
-        
-        .navbar{
-            display: flex;
-            align-items:flex-start;
-            flex-direction: column;
-            width: 0em;
-            min-height: 100vh;
-            
+    display: grid;
+    grid-template-areas:
+    "header header"
+    "menu main"
+    "footer footer"; 
+    grid-template-columns: 15% auto;
         }
 
-        .cards{
-            display: flex;
-            }
-
-            .card {
-            display: flex;
-            flex-direction: column;
-            width: 20em;
-            border: solid 1px;
-            margin: 5px;
-           padding: 5px;
-           background-color: white;
-            }
-
-            .card-body {
-            flex-grow: 1;
-            flex-basis: 0;
-            }
+    .aside-bar
+        {
+    display: flex;
+    background-color: lightsteelblue;
+    
+    }
             
-            .foto-kingdom{
-                width: 15em;
-            } 
+        
+    .navbar{
+    display: flex;
+    align-items:flex-start;
+    flex-direction: column;
+    margin: 0 auto;
+    min-height: 100vh;
+    width: 80%;
+        
+    }
 
-             .foto-phantom{
-                width: 15em;
-            }
-            
-            .foto-shoes01{
-                width: 15em;
-            }
-            .foto-hoodie01{
-                width: 15em;
-            }
+    .p-art1{
+        margin: 3px;
+    }
+
+        
+
+    .card {
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 19em;
+    margin: 10px;
+    padding: 0px;
+    background-color: white;
+    }
+
+                
+    .card-texto{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .p-texto{
+    margin: 10px;
+    }
+
+    .foto-kingdom{
+    width: 15em;
+    } 
+
+    .foto-phantom{
+    width: 15em;
+    }
+    
+    .foto-shoes01{
+    width: 15em;
+    }
+    .foto-hoodie01{
+    width: 15em;
+    }
+
+    .container-boton{
+    width: 100%;
+    }
+    .boton-chat{
+    border: solid darkblue;
+    background-color: darkblue;
+    padding: 0px 124px;
+    height: 40px;
+    color: white;
+        } 
+                
+
+
+    @media only screen and (max-width: 600px) {
+    .cards {
+    width: 90%;
+    }
+        }  
+        
